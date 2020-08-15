@@ -10,4 +10,14 @@ class Triangle
     @side_c = side_c
   end
 
+  def kind
+    if side_a == side_b
+      return "isosceles"
+      elsif side_a == side_b == side_c
+      return "equilateral"
+    else
+      return "scalene"
+  end
+  
+
 end
