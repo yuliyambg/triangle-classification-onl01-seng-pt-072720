@@ -32,8 +32,8 @@ class Triangle
   end
 
 
-def kind
-min, min2, max = [@a, @b, @c].sort
+  def kind
+  min, min2, max = [@a, @b, @c].sort
 if min < 0 || min + min2 <= max
 raise TriangleError
 end
