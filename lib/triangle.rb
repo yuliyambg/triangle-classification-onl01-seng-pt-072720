@@ -31,4 +31,13 @@ class Triangle
     @a, @b, @c = a,b,c
   end
 
+
+def kind
+  
+end
+
+
+
+
+
 end
