@@ -12,7 +12,7 @@ class Triangle
   end
 
   def kind
-    
+  [:equilateral, :isosceles, :scalene][[@a, @b, @c].uniq.size - 1]
   end
   
   # class TriangleError < StandardError
