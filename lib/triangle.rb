@@ -19,5 +19,8 @@ class Triangle
       return "scalene"
   end
   
-
+class TriangleError < StandardError
+    # triangle error code
+  end
+  
 end
