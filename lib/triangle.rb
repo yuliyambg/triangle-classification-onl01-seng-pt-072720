@@ -6,7 +6,7 @@ class Triangle
   
   def initialize(a,b,c)
     @a, @b, @c = [a, b, c].sort
-    raise InvalidTriangleError unless valid_triangle?
+    raise TriangleError unless valid_triangle?
     @kind = kind
 
   end
@@ -20,8 +20,8 @@ class Triangle
   [:equilateral, :isosceles, :scalene][[@a, @b, @c].uniq.size - 1]
   end
   
-  # class TriangleError < StandardError
-  #   # triangle error code
-  # end
+  class TriangleError < StandardError
+    # triangle error code
+  end
   
 end
