@@ -12,7 +12,7 @@ class Triangle
   end
 
     def valid_triangle?
-    !!(@a > 0 && @a + @b > @c)
+    @a > 0 && @a + @b > @c
    end
 
 
