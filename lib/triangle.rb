@@ -11,6 +11,11 @@ class Triangle
 
   end
 
+    def valid_triangle?
+    !!(@a > 0 && @a + @b > @c)
+   end
+
+
   def kind
   [:equilateral, :isosceles, :scalene][[@a, @b, @c].uniq.size - 1]
   end
